@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>實體聚會登記表單</title>
+</head>
+
+<body>
+    <H2>登記參加2021年八月八日實體聚會:</H2>
+    <H3>因應政府規定, 室內最高人數為五十人, 本堂以一棟為單位. 人與人之間必須表持室內1.5公尺/室外1.0公尺之社交距離, 故大堂可容納35人, 夾層7人, 音控室1人, 幼兒室6人. 副堂19人, 大教室12人
+        總共可容80人. 因此, 若願意參加實體聚會者, 需要登記人數, 以便配合政府要求, 敬請配合, 非常感謝.
+    </H3>
+    <H3 style=color:purple>如超過規定之人數, 超出者, 將另行通知</H3>
+    <marquee direction="right" height="100" scrollamount="5" behavior="alternate">
+        <font font size="5" style="color:rgb(95, 16, 241)">煩請抽空幫忙登記一下, 謝謝 </font><img src="img/thanks.jpg" width=50px>
+    </marquee>
+
+
+    <div class="container mt-5">
+
+        <iframe name="returnWin" style="display: none;"
+            onload="this.onload=function(){window.location='ok1.html'}"></iframe>
+
+        <!--表單問題中的傳送碼-->
+        <form target='returnWin' role="form"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfQo1f9z4HV9To2pe1OmEJEbfMMlEcQ9_lWPkfOaEXnTwqbNg/formResponse"
+            method="post" id="myForm">
+            <div class="row">
+                <!--小組-->
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>小組<span class="text-danger">*</span></label>
+                        <select name="entry.2145471606" id="22145471606" value="" class="form-control" size="1">
+                            <option value="長青小組">長青小組</option>
+                            <option value="良善小組">良善小組</option>
+                            <option value="百合小組">百合小組</option>
+                            <option value="得勝小組">得勝小組</option>
+                            <option value="喜樂小組">喜樂小組</option>
+                            <option value="美女小組">美女小組</option>
+                            <option value="牛棚小組">牛棚小組</option>
+                            <option value="以勒小組">以勒小組</option>
+                            <option value="佳美小組">佳美小組</option>
+                            <option value="約書亞小組">約書亞小組</option>
+                            <option value="保羅小組">保羅小組</option>
+                            <option value="盛愛小組">盛愛小組</option>
+                            <option value="帝寶小組">帝寶小組</option>
+                            <option value="凡恩小組">凡恩小組</option>
+                            <option value="1+7小組">1+7小組</option>
+                            <option value="國高組">國高組</option>
+                            <option value="大專組">大專組</option>
+                            <option value="成人英文查經班">成人英文查經班</option>
+                            <option value="上恩小組">上恩小組</option>
+                            <option value="國高中組">國高中組</option>
+                            <option value="自由區">自由區</option>
+                            <option value="牧者">牧者</option>
+
+                        </select>
+                    </div>
+                </div>
+
+
+                <!--姓名-->
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label><span class="title">姓名</span><span class="text-primary">*(請填您的姓名)</span></label>
+                        <input type="text" class="form-control" name="entry.1695079590" id="1695079590" maxlength="6" />
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="control-label">備註</label>
+                        <textarea class="form-control" rows="2" name="entry.1500756317" id="1500756317"></textarea>
+                        <H4 style=color:red>(如果當天是服事同工, 請特別註明, 優先計算, 謝謝)</H4>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="text-center pb-3">
+                <button type="submit" class="btn btn-primary">送出</button>
+
+            </div>
+
+        </form>
+    </div>
+
+    <!--表單標題結束-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- 表單驗證 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  
+    <script>
+        $(function(){
+            $("#myForm").validate({
+                submitHandler: function(form){
+                    form.submit();
+                },
+                rules: {
+                    'entry.2145471606' : {
+                        required: true
+                     },
+                     'entry.1695079590':{
+                        required:true,
+                        
+                    },'entry.291641778' :{
+                        required:true,
+                        
+                                            
+                    
+
+                    }
+                },  
+                     
+                
+                messages: {
+                    'entry.2145471606' : {
+            required: "必填"
+          },
+          'entry.1695079590' : {
+            required: "必填"
+          },
+          'entry.291641778' : {
+            required: "必填"
+       
+                    }
+                }
+            });
+
+        });
+
+    </script>
+-->
+</body>
+
+</html>
+</body>
+
+</html>
